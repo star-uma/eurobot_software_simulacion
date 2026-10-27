@@ -6,11 +6,11 @@
 
 <package format="3">
   <!-- Nombre del paquete al que se le hará referencia para lanzar los mundos o nodos-->
-  <name>eurobot2027_software_simulacion</name>
+  <name>eurobot_software_simulacion</name>
   <!-- Versión de desarrollo-->
   <version>0.0.0</version>
   <!-- Descripción, mantenedor y licencia (términos legales) del paquete -->
-  <description>Paquete eurobot2027_software_simulacion para Eurobot 2027</description>
+  <description>Paquete eurobot_software_simulacion para Eurobot 2027</description>
   <maintainer email="ivan@todo.me">TnTivanTnT</maintainer>
   <license>Apache License 2.0</license>
   <!-- Descarga la herramienta de compilación, en este caso es C++, en python será ament_python, va con rosdep -->
