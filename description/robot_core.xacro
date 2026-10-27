@@ -132,7 +132,7 @@
             <visual>
                 <origin xyz="0 0 0" rpy="0 0 ${rotacion_z}"/>                               <!-- No necesario ahora pero por si al importar el stl no encaja-->
                 <geometry>
-                    <cylinder radius="0.0325" length="0.04"/>                               <!-- <mesh filename="file://$(find eurobot2027_software_simulacion)/description/meshes/rueda.stl" scale="1 1 1"/> para cuando se añada el stl-->
+                    <cylinder radius="0.0325" length="0.04"/>                               <!-- <mesh filename="file://$(find eurobot_software_simulacion)/description/meshes/rueda.stl" scale="1 1 1"/> para cuando se añada el stl-->
                 </geometry>
                 <material name="blue"/>
             </visual>
