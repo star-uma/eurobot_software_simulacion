@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.8">
-  <world name="eurobot_2027_world">
+  <world name="eurobot_world">
     
     <!-- Motores del simulador (Físicas, comandos e interfaz de usuario) -->
     <plugin filename="ignition-gazebo-physics-system" name="ignition::gazebo::systems::Physics"/>
@@ -59,7 +59,7 @@
             <pbr>
             <metal>
                 <!-- La ruta es relativa a la ubicación del archivo .png -->
-                <albedo_map>materials/textures/mapa_eurobot2027.png</albedo_map>
+                <albedo_map>materials/textures/mapa_eurobot.png</albedo_map>
             </metal>
             </pbr>
           </material>          
