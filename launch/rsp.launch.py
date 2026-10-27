@@ -12,7 +12,7 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
 
     # 2. Localización dinámica de los archivos, usamos robot.urdf.xacro porque es el que contiene tanto el robot como los sensores
-    pkg_path = get_package_share_directory('eurobot2027_software_simulacion')
+    pkg_path = get_package_share_directory('eurobot_software_simulacion')
     xacro_file = os.path.join(pkg_path, 'description', 'robot.urdf.xacro')
 
     # 3. Configuración del nodo principal
