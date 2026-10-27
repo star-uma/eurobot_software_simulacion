@@ -27,7 +27,7 @@ rosdep install --from-paths src --ignore-src -r -y
 ```
 ## Compilación del paquete simulación
 ```bash
-colcon build --packages-select eurobot2027_software_simulacion --symlink-install
+colcon build --packages-select eurobot_software_simulacion --symlink-install
 ```
 ## Referencia a los archivos
 ```bash
@@ -36,7 +36,7 @@ source install/setup.bash
 
 ## Lanzamiento gazebo (terminal 1)
 ```bash
-ros2 launch eurobot2027_software_simulacion sim.launch.py
+ros2 launch eurobot_software_simulacion sim.launch.py
 ```
 ## Control teleop (terminal 2)
 ```bash
