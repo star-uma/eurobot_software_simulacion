@@ -6,21 +6,22 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
 
 def generate_launch_description():
-    pkg_name = 'eurobot_software_simulacion'
-    pkg_share = get_package_share_directory(pkg_name)
+    # Obtenemos las rutas de AMBOS paquetes
+    pkg_simulacion = get_package_share_directory('eurobot_software_simulacion')
+    pkg_description = get_package_share_directory('eurobot_software_description')
 
-    # Inyecta la carpeta worlds en el path de recursos de Gazebo
-    env_ign = AppendEnvironmentVariable('IGN_GAZEBO_RESOURCE_PATH', os.path.join(pkg_share, 'worlds'))
-    env_gz = AppendEnvironmentVariable('GZ_SIM_RESOURCE_PATH', os.path.join(pkg_share, 'worlds'))
+    # La carpeta worlds se quedó en simulación
+    env_ign = AppendEnvironmentVariable('IGN_GAZEBO_RESOURCE_PATH', os.path.join(pkg_simulacion, 'worlds'))
+    env_gz = AppendEnvironmentVariable('GZ_SIM_RESOURCE_PATH', os.path.join(pkg_simulacion, 'worlds'))
 
-    # 1. Lanza tu robot_state_publisher forzando el tiempo de simulación a true
+    # 1. Lanza rsp.launch.py desde el paquete description
     rsp = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(pkg_share, 'launch', 'rsp.launch.py')]),
+        PythonLaunchDescriptionSource([os.path.join(pkg_description, 'launch', 'rsp.launch.py')]),
         launch_arguments={'use_sim_time': 'true'}.items()
     )
 
-    # 2. Lanza Gazebo cargando el archivo SDF de la mesa
-    world_file = os.path.join(pkg_share, 'worlds', 'eurobot.sdf')
+    # 2. Lanza Gazebo cargando el archivo SDF desde simulación
+    world_file = os.path.join(pkg_simulacion, 'worlds', 'eurobot.sdf')
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
             os.path.join(get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')

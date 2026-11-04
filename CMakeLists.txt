@@ -11,7 +11,7 @@ find_package(ament_cmake REQUIRED)
 
 # Instrucción para copiar las carpetas al compilar dede /src/ a install/share/
 install(
-  DIRECTORY description launch config worlds
+  DIRECTORY  launch config worlds
   DESTINATION share/${PROJECT_NAME}
 )
 
