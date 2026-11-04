@@ -3,10 +3,11 @@
   <model name="caja_base">
     <static>false</static>
     <link name="link">
+      <pose>0 0 0 0 1.5708 0</pose> <!-- Giro de pi/2 para poner las cajas en horizontal-->
       <inertial>
         <mass>0.09</mass>
         <inertia>
-          <ixx>0.0005105</ixx><iyy>0.0005105</iyy><izz>0.000121</izz>
+          <ixx>0.000121</ixx><iyy>0.0005105</iyy><izz>0.0005105</izz>
           <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz>
         </inertia>
       </inertial>

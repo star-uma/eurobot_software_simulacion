@@ -108,62 +108,62 @@
     <!-- ############################################################ -->
     
     <!-- Pack Izquierdo 1 -->
-    <include><name>caja_1</name><pose> 0.6 1.9 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_2</name><pose> 0.71 1.9 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_3</name><pose> 0.82 1.9 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_1</name><pose> 0.6 1.9 0.055 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_2</name><pose> 0.6 1.9 0.165 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_3</name><pose> 0.6 1.9 0.275 0 0 0</pose><uri>caja.sdf</uri></include>
   
     <!-- Pack Izquierdo 2 -->
-    <include><name>caja_4</name><pose> 1.1 1.9 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_5</name><pose> 1.21 1.9 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_6</name><pose> 1.32 1.9 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_4</name><pose> 1.1 1.9 0.055 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_5</name><pose> 1.1 1.9 0.165 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_6</name><pose> 1.1 1.9 0.275 0 0 0</pose><uri>caja.sdf</uri></include>
   
     <!-- Pack Izquierdo 3 -->
-    <include><name>caja_7</name><pose> 1.7 1.9 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_8</name><pose> 1.81 1.9 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_9</name><pose> 1.92 1.9 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_7</name><pose> 1.7 1.9 0.055 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_8</name><pose> 1.7 1.9 0.165 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_9</name><pose> 1.7 1.9 0.275 0 0 0</pose><uri>caja.sdf</uri></include>
   
     <!-- Pack Izquierdo 4 -->
-    <include><name>caja_10</name><pose> 2.2 1.9 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_11</name><pose> 2.31 1.9 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_12</name><pose> 2.42 1.9 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_10</name><pose> 2.2 1.9 0.055 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_11</name><pose> 2.2 1.9 0.165 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_12</name><pose> 2.2 1.9 0.275 0 0 0</pose><uri>caja.sdf</uri></include>
 
 
     <!-- ############################################################ -->
 
 
     <!-- Pack Derecho 1 -->
-    <include><name>caja_13</name><pose> 0.6 0.1 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_14</name><pose> 0.71 0.1 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_15</name><pose> 0.82 0.1 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_13</name><pose> 0.6 0.1 0.055 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_14</name><pose> 0.6 0.1 0.165 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_15</name><pose> 0.6 0.1 0.275 0 0 0</pose><uri>caja.sdf</uri></include>
   
     <!-- Pack Derecho 2 -->
-    <include><name>caja_16</name><pose> 1.1 0.1 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_17</name><pose> 1.21 0.1 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_18</name><pose> 1.32 0.1 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_16</name><pose> 1.1 0.1 0.055 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_17</name><pose> 1.1 0.1 0.165 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_18</name><pose> 1.1 0.1 0.275 0 0 0</pose><uri>caja.sdf</uri></include>
   
     <!-- Pack Derecho 3 -->
-    <include><name>caja_19</name><pose> 1.7 0.1 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_20</name><pose> 1.81 0.1 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_21</name><pose> 1.92 0.1 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_19</name><pose> 1.7 0.1 0.055 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_20</name><pose> 1.7 0.1 0.165 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_21</name><pose> 1.7 0.1 0.275 0 0 0</pose><uri>caja.sdf</uri></include>
   
     <!-- Pack Derecho 4 -->
-    <include><name>caja_22</name><pose> 2.2 0.1 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_23</name><pose> 2.31 0.1 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_24</name><pose> 2.42 0.1 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_22</name><pose> 2.2 0.1 0.055 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_23</name><pose> 2.2 0.1 0.165 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_24</name><pose> 2.2 0.1 0.275 0 0 0</pose><uri>caja.sdf</uri></include>
   
 
     <!-- ############################################################ -->
 
 
     <!-- Pack Central 1 -->
-    <include><name>caja_25</name><pose> 1.5 1.6 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_26</name><pose> 1.5 1.49 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_27</name><pose> 1.5 1.38 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_25</name><pose> 1.5 1.5 0.055 0 0 1.5708</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_26</name><pose> 1.5 1.5 0.165 0 0 1.5708</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_27</name><pose> 1.5 1.5 0.275 0 0 1.5708</pose><uri>caja.sdf</uri></include>
   
     <!-- Pack Central 2 -->
-    <include><name>caja_28</name><pose> 1.5 0.6 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_29</name><pose> 1.5 0.49 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
-    <include><name>caja_30</name><pose> 1.5 0.38 0.15 0 0 0</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_28</name><pose> 1.5 0.5 0.055 0 0 1.5708</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_29</name><pose> 1.5 0.5 0.165 0 0 1.5708</pose><uri>caja.sdf</uri></include>
+    <include><name>caja_30</name><pose> 1.5 0.5 0.275 0 0 1.5708</pose><uri>caja.sdf</uri></include>
   
 
   
