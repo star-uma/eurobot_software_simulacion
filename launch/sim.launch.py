@@ -30,8 +30,8 @@ def generate_launch_description():
         controllers_config = yaml.safe_load(f)
 
     # Inyección de medidas desde parametros_robot.yaml a controllers.yaml
-    controllers_config['diff_cont']['ros__parameters']['wheel_separation'] = float(params_fisicos['wheel_separation'])
-    controllers_config['diff_cont']['ros__parameters']['wheel_radius'] = float(params_fisicos['wheel_radius'])
+    controllers_config['diff_cont']['ros__parameters']['wheel_separation'] = float(params_fisicos['base']['wheel_separation'])
+    controllers_config['diff_cont']['ros__parameters']['wheel_radius'] = float(params_fisicos['base']['wheel_radius'])
 
     # Guardar en archivo temporal
     generated_controllers_path = os.path.join(tempfile.gettempdir(), 'eurobot_controllers_generado.yaml')
@@ -81,7 +81,6 @@ def generate_launch_description():
         arguments=[
             '/clock@rosgraph_msgs/msg/Clock[ignition.msgs.Clock',
             '/scan@sensor_msgs/msg/LaserScan[ignition.msgs.LaserScan',
-            '/joint_states@sensor_msgs/msg/JointState[ignition.msgs.Model',
             '/camera/image_raw@sensor_msgs/msg/Image[ignition.msgs.Image',
             '/odom@nav_msgs/msg/Odometry[ignition.msgs.Odometry',
             '/tf@tf2_msgs/msg/TFMessage[ignition.msgs.Pose_V' 
@@ -97,7 +96,7 @@ def generate_launch_description():
         output='screen'
     )
 
-# 6. Spawner para el emisor de estados de las articulaciones (joint_broad)
+    # 6. Spawner para el emisor de estados de las articulaciones (joint_broad)
     joint_broad_spawner = Node(
         package='controller_manager',
         executable='spawner',
@@ -110,10 +109,15 @@ def generate_launch_description():
         package='controller_manager',
         executable='spawner',
         arguments=['diff_cont'],
-        remappings=[('/diff_cont/cmd_vel_unstamped', '/cmd_vel')],
         output='screen'
     )
-
+    # 8. Spawner para el controlador del actuador (actuator_cont)
+    actuator_cont_spawner = Node(
+        package='controller_manager',
+        executable='spawner',
+        arguments=['actuator_cont'],
+        output='screen'
+    )
     return LaunchDescription([
         env_ign, 
         env_gz, 
@@ -123,5 +127,6 @@ def generate_launch_description():
         bridge, 
         static_tf,
         joint_broad_spawner,
-        diff_cont_spawner
+        diff_cont_spawner,
+        actuator_cont_spawner
     ])
