@@ -18,13 +18,12 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/pkgs-
 sudo apt-get update
 sudo apt-get install ignition-fortress
 ```
-## Instalación de dependencias 
 
 ```bash
-sudo rosdep init
-rosdep update
-rosdep install --from-paths src --ignore-src -r -y
+sudo apt install ros-humble-ign-ros2-control ros-humble-ros2-controllers ros-humble-joint-state-broadcaster
 ```
+
+
 ## Compilación del paquete simulación
 ```bash
 colcon build --packages-select eurobot_software_simulacion --symlink-install
